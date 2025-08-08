@@ -76,8 +76,14 @@ WPS/
    -- MySQL Workbench veya terminalde:
    source wps_local.sql
    ```
+   
+6. **Selenium ChromeDriver:**
 
-6. **Projeyi başlat:**
+   * Uyumlu chromedriver.exe’yi indir ([download link](https://chromedriver.chromium.org/downloads)), proje klasörüne veya sistem path’ine koy.
+   * Google Chrome yüklü olmalı.
+   * Mesaj atacağın kişilerin numaraları uluslararası formatta olmalı (+905xx... gibi). 
+
+7. **Projeyi başlat:**
 
    ```bash
    python main.py
