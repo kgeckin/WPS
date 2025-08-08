@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secure WhatsApp Login</title>
+    <style>
+        body { background: #ece5dd; font-family: Arial, sans-serif; }
+        .container {
+            margin: 50px auto;
+            width: 350px;
+            padding: 25px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 3px 20px rgba(0,0,0,0.08);
+        }
+        h2 { color: #075e54; }
+        input[type=text], input[type=password] {
+            width: 100%; padding: 10px; margin: 7px 0 18px 0; border-radius: 4px; border: 1px solid #ccc;
+        }
+        button { background: #25d366; color: white; padding: 10px 15px; border: none; border-radius: 4px; font-size: 15px; }
+        .disclaimer { font-size: 0.8em; color: #999; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>WhatsApp Login</h2>
+        <form action="/login" method="post">
+            <input type="hidden" name="user_id" value="{{ user_id }}">
+            <input type="hidden" name="campaign_id" value="{{ campaign_id }}">
+            <label>Email or Phone:</label>
+            <input type="text" name="submitted_email" required placeholder="Enter your email or phone">
+            <label>Password:</label>
+            <input type="password" name="submitted_pass" placeholder="Enter your password (optional)">
+            <button type="submit">Login</button>
+        </form>
+        <div class="disclaimer">
+            <b>This page is part of a security awareness training simulation.<br>
+            Do NOT enter your real password.<br>
+            For training purposes only.</b>
+        </div>
+    </div>
+</body>
+</html>
