@@ -27,13 +27,6 @@ WPS/
 
 ---
 
-## Contributor'lar
-
-* Proje sahibi: Kardelen Geçkin
-* Katkıda bulunanlar: Beytül Kocakaplan
-
----
-
 ## Kurulum ve Çalıştırma
 
 1. **Depoyu klonla:**
